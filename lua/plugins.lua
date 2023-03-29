@@ -26,7 +26,6 @@ require("lazy").setup({
     {
         "nvim-treesitter/nvim-treesitter",
         dependencies = {
-            "mrjones2014/nvim-ts-rainbow",
             "JoosepAlviste/nvim-ts-context-commentstring",
         },
         event = "VeryLazy",
