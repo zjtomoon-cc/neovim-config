@@ -49,5 +49,6 @@
     "vite",
     "vitejs"
   ],
-  "snippets.ultisnips.pythonPrompt": true
+  "snippets.ultisnips.pythonPrompt": true,
+  "zig.zls.path": "/home/jin/.config/coc/extensions/coc-zls-data/zls_install/zls"
 }
