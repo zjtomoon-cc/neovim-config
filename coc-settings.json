@@ -25,6 +25,10 @@
   "pylsp.builtin.pythonLspBlackVersion": "1.0.1",
   "pylsp.builtin.enableInstallPylspMypy": true,
   "pylsp.builtin.pylspMypyVersion": "0.5.2",
+  "zig.zls.enabled": true,
+  "zig.zls.checkForUpdate": true,
+  "zig.zls.enableSnippets": true,
+  "zig.zls.enableInlayHints": true,
   "languageserver": {},
   "cSpell.userWords": [
     "Autoupdate",
