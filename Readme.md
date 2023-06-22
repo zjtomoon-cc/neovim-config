@@ -30,7 +30,8 @@ git clone -b coc https://github.com/jinzhongjia/neovim-config.git ~/.config/nvim
 - Lazydocker
 - fd (*embed lsp*)
 - ripgrep (*embed lsp*)
-
+- unzip (*embed lsp*)
+- Cmake (*embed lsp*)
 
 ## Note
 
