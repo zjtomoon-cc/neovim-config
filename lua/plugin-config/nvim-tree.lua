@@ -18,27 +18,27 @@ nvim_tree.setup({
   view = {
     adaptive_size = true,
     hide_root_folder = false,
-    mappings = {
-      list = {
-        -- open file or dir
-        { key = { "<CR>", "o", "<2-LeftMouse>" }, action = "edit" },
-        -- split windows open file
-        { key = "v", action = "vsplit" },
-        { key = "h", action = "split" },
-        -- show hidden file
-        { key = "i", action = "toggle_custom" }, -- filters custom (node_modules)
-        { key = ".", action = "toggle_dotfiles" }, -- Hide (dotfiles)
-        -- file handle
-        { key = "<F5>", action = "refresh" },
-        { key = "a", action = "create" },
-        { key = "d", action = "remove" },
-        { key = "r", action = "rename" },
-        { key = "x", action = "cut" },
-        { key = "c", action = "copy" },
-        { key = "p", action = "paste" },
-        { key = "s", action = "system_open" },
-      },
-    },
+    -- mappings = {
+    --   list = {
+    --     -- open file or dir
+    --     { key = { "<CR>", "o", "<2-LeftMouse>" }, action = "edit" },
+    --     -- split windows open file
+    --     { key = "v", action = "vsplit" },
+    --     { key = "h", action = "split" },
+    --     -- show hidden file
+    --     { key = "i", action = "toggle_custom" }, -- filters custom (node_modules)
+    --     { key = ".", action = "toggle_dotfiles" }, -- Hide (dotfiles)
+    --     -- file handle
+    --     { key = "<F5>", action = "refresh" },
+    --     { key = "a", action = "create" },
+    --     { key = "d", action = "remove" },
+    --     { key = "r", action = "rename" },
+    --     { key = "x", action = "cut" },
+    --     { key = "c", action = "copy" },
+    --     { key = "p", action = "paste" },
+    --     { key = "s", action = "system_open" },
+    --   },
+    -- },
   },
   renderer = {
     group_empty = true,
