@@ -36,7 +36,7 @@ map("n", "s=", "<C-w>=", opt)
 -- Terminal related
 map("n", "<leader>t", ":sp | terminal<CR>", opt)
 map("n", "<leader>vt", ":vsp | terminal<CR>", opt)
-map("t", "<A-s>", "<C-\\><C-n>", opt)
+-- map("t", "<A-s>", "<C-\\><C-n>", opt)
 
 -- Indent code in visual mode
 map("v", "<", "<gv", opt)
@@ -96,13 +96,17 @@ map("n", "<leader>tl", "<Plug>(coc-translator-p)", opt)
 map("v", "<leader>tl", "<Plug>(coc-translator-pv)", opt)
 
 -- Floating terminal floaterm
+-- Floating terminal floaterm
 map("n", "<leader>ft", ":FloatermNew<CR>", opt)
+map("t", "<leader>ft", "<C-\\><C-n>:FloatermNew<CR>", opt)
 map("n", "<leader>fj", ":FloatermPrev<CR>", opt)
+map("t", "<leader>fj", "<C-\\><C-n>:FloatermPrev<CR>", opt)
 map("n", "<leader>fk", ":FloatermNext<CR>", opt)
+map("t", "<leader>fk", "<C-\\><C-n>:FloatermNext<CR>", opt)
 map("n", "<leader>fs", ":FloatermToggle<CR>", opt)
+map("t", "<leader>fs", "<C-\\><C-n>:FloatermToggle<CR>", opt)
 map("n", "<leader>fc", ":FloatermKill<CR>", opt)
-map("n", "<leader>fd", ":FloatermNew lazydocker <CR>", opt)
-map("n", "<leader>fg", ":FloatermNew lazygit <CR>", opt)
+map("t", "<leader>fc", "<C-\\><C-n>:FloatermKill<CR>", opt)
 
 -- nvim-tree
 map("n", "<A-m>", ":NvimTreeToggle<CR>", opt)

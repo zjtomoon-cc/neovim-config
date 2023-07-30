@@ -10,7 +10,7 @@ vim.g.coc_global_extensions = {
   "coc-html", -- for html
   "coc-sumneko-lua", -- for lua with sumneko-lua
   "coc-markdownlint", -- for markdown
-  "coc-phpls", -- for php with intelephense
+  -- "coc-phpls", -- for php with intelephense
   "@yaegassy/coc-pylsp", -- for python
   "coc-sql", -- for
   "coc-zls", -- for zig
@@ -27,7 +27,7 @@ vim.g.coc_global_extensions = {
   "coc-lists", -- for list
   "coc-emmet", -- for emmet
   "coc-marketplace", -- for marketplace
-  "coc-browser", -- for Browser words completion
+  -- "coc-browser", -- for Browser words completion
   "coc-translator", -- for translator
   "coc-spell-checker", -- for spell
   "coc-prettier", -- for prettier
@@ -35,10 +35,10 @@ vim.g.coc_global_extensions = {
   "coc-toml", -- for toml
   "coc-xml", -- for xml
   "coc-yaml", -- for yaml
-  "coc-leetcode", -- for leetcode
+  -- "coc-leetcode", -- for leetcode
   "coc-lightbulb", -- for code action lightbulb
-  "coc-stylelint", -- for stylelint
+  -- "coc-stylelint", -- for stylelint
   "coc-calc", -- for calc
   "coc-typos", -- for Typos integration
-  "coc-xmake", -- for xmake
+  -- "coc-xmake", -- for xmake
 }
