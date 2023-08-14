@@ -9,7 +9,7 @@ Embed lsp is for geek customization, coc is for lightweight configuration.
 For embed lsp users:
 
 ```sh
-git clone -b lsp https://github.com/jinzhongjia/neovim-config.git ~/.config/nvim
+git clone -b hybrid https://github.com/jinzhongjia/neovim-config.git ~/.config/nvim
 ```
 
 For coc users:
@@ -39,7 +39,7 @@ When you install this configuration compeletely, you need to run`:checkhealth` f
 
 ### For `embed lsp` users
 
-lsp server and null-ls denpendences are all installed by mason, you can use `:mason` to check installing information
+lsp server and guard denpendences are all installed by mason, you can use `:mason` to check installing information
 
 ### FOr `coc` users
 
