@@ -8,11 +8,15 @@ Embed lsp is for geek customization, coc is for lightweight configuration.
 
 For embed lsp users:
 
+neovim version: `nightly`
+
 ```sh
 git clone -b hybrid https://github.com/jinzhongjia/neovim-config.git ~/.config/nvim
 ```
 
 For coc users:
+
+neovim version: `latest release`
 
 ```sh
 git clone -b coc https://github.com/jinzhongjia/neovim-config.git ~/.config/nvim
