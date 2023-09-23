@@ -1,6 +1,6 @@
 # Quick Start
 
-[中文](https://github.com/jinzhongjia/neovim-config/blob/main/Readme.md)
+[中文](https://github.com/jinzhongjia/neovim-config/blob/main/Readme_CN.md)
 
 Now, I have two branches for neovim, one is using `embed lsp`, anothor is using `coc.nvim`.
 
