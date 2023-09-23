@@ -1,5 +1,7 @@
 # Quick Start
 
+[中文](https://github.com/jinzhongjia/neovim-config/blob/main/Readme.md)
+
 Now, I have two branches for neovim, one is using `embed lsp`, anothor is using `coc.nvim`.
 
 Embed lsp is for geek customization, coc is for lightweight configuration.
