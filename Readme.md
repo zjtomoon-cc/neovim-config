@@ -6,6 +6,8 @@ Now, I have two branches for neovim, one is using `embed lsp`, anothor is using 
 
 Embed lsp is for geek customization, coc is for lightweight configuration.
 
+> *In fact, I don’t want you to directly copy or git it down and use my configuration. My configuration is more suitable for myself. The role of my configuration is more often to provide you with an idea for your own configuration, so that you can Understand which plug-ins are needed, how to deal with dependencies, how to deal with file organization structure, and more!*
+
 ## Install
 
 For embed lsp users:
