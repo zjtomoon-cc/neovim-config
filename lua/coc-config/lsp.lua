@@ -40,4 +40,4 @@ local function show_docs()
 end
 
 -- Use K to show documentation in preview window
-keyset("n", "K", show_docs, { silent = true })
+keyset("n", "gh", show_docs, { silent = true })
