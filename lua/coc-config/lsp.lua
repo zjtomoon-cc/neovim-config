@@ -41,3 +41,5 @@ end
 
 -- Use K to show documentation in preview window
 keyset("n", "gh", show_docs, { silent = true })
+-- override default K, prevent error
+keyset("n", "K", show_docs, { silent = true })
