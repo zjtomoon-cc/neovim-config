@@ -4,8 +4,6 @@ if not status then
   return
 end
 
-local opts = {}
-
 local handler = function(virtText, lnum, endLnum, width, truncate)
   local newVirtText = {}
   local totalLines = vim.api.nvim_buf_line_count(0)
@@ -39,9 +37,9 @@ local handler = function(virtText, lnum, endLnum, width, truncate)
   return newVirtText
 end
 
-opts["fold_virt_text_handler"] = handler
-
-nvim_ufo.setup(opts)
+nvim_ufo.setup({
+  ["fold_virt_text_handler"] = handler,
+})
 
 vim.keymap.set("n", "zR", function()
   nvim_ufo.openAllFolds()
