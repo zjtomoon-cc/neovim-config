@@ -17,7 +17,6 @@
   "sumneko-lua.enableNvimLuaDev": true,
   "Lua.runtime.version": "LuaJIT",
   "coc.preferences.formatOnSave": false,
-  "leetcode.language": "golang",
   "pylsp.builtin.installExtrasArgs": ["all"],
   "pylsp.builtin.enableInstallPylsIsort": true,
   "pylsp.builtin.pylsIsortVersion": "0.2.2",
