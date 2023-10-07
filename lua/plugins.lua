@@ -38,6 +38,16 @@ require("lazy").setup({
     end,
   },
   {
+    "m-demare/hlargs.nvim",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+    event = "VeryLazy",
+    config = function()
+      require("plugin-config.hlargs")
+    end,
+  },
+  {
     "nvim-lualine/lualine.nvim",
     dependencies = {
       "nvim-tree/nvim-web-devicons",
@@ -60,7 +70,7 @@ require("lazy").setup({
   },
   {
     "lukas-reineke/indent-blankline.nvim",
- main = "ibl",
+    main = "ibl",
     event = "VeryLazy",
     config = function()
       require("plugin-config.indent-blankline")
@@ -99,7 +109,7 @@ require("lazy").setup({
     config = function()
       require("coc-config")
     end,
-    },
+  },
   {
     "voldikss/vim-translator",
     event = "VeryLazy",
@@ -113,14 +123,15 @@ require("lazy").setup({
   {
     "gelguy/wilder.nvim",
     event = "VeryLazy",
+    build = ":UpdateRemotePlugins",
     config = function()
       require("plugin-config.wilder")
     end
   },
   {
     "voldikss/vim-floaterm",
-        event = "VeryLazy",
-    config=function ()
+    event = "VeryLazy",
+    config = function()
       local tool = require("tool")
       local map = tool.map
 
@@ -151,6 +162,34 @@ require("lazy").setup({
     "tpope/vim-fugitive",
     event = "VeryLazy",
   },
+  {
+    "folke/zen-mode.nvim",
+    event = "VeryLazy",
+    opts = {},
+  },
+  {
+    "folke/twilight.nvim",
+    event = "VeryLazy",
+    opts = {},
+  },
+  {
+    "levouh/tint.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("tint").setup()
+    end,
+  },
+  {
+    "chrisgrieser/nvim-early-retirement",
+    config = true,
+    event = "VeryLazy",
+  },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    event = "VeryLazy",
+    opts = {},
+  },
 
   --------------------- colorschemes --------------------
   {
@@ -166,7 +205,16 @@ require("lazy").setup({
           flavour = "macchiato",
         })
       end
-      vim.cmd.colorscheme("catppuccin")
+      -- vim.cmd.colorscheme("catppuccin")
+    end,
+  },
+  {
+    "projekt0n/github-nvim-theme",
+    enabled = true,
+    priority = 1000,     -- make sure to load this before all the other start plugins
+    config = function()
+      require("github-theme").setup({})
+      vim.cmd("colorscheme github_dark_dimmed")
     end,
   },
 }, lazy_config)
