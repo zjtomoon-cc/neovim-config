@@ -3,6 +3,11 @@ vim.g.encoding = "UTF-8"
 
 vim.g.loaded_perl_provider = 0
 
+vim.o.foldcolumn = '1'
+vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+
 vim.o.fileencoding = "utf-8"
 -- Keep 8 lines around the cursor when jkhl moves
 vim.o.scrolloff = 5
@@ -46,7 +51,7 @@ vim.bo.autoread = true
 -- No line breaks
 vim.wo.wrap = false
 -- <Left><Right> can jump to the next line when the cursor is at the beginning and end of the line
-vim.o.whichwrap = "<,>,[,]"
+vim.o.whichwrap = "b,s,<,>,[,]"
 -- Allows to hide modified buffers
 vim.o.hidden = true
 -- mouse support
@@ -81,6 +86,8 @@ vim.o.pumheight = 10
 vim.o.showtabline = 1
 -- vim's modal prompt is no longer required after using the enhanced status bar plugin
 vim.o.showmode = false
+
+vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
 vim.g.zig_fmt_autosave = false
 

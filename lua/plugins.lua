@@ -159,6 +159,36 @@ require("lazy").setup({
     end
   },
   {
+    "kevinhwang91/nvim-ufo",
+    dependencies = {
+      "kevinhwang91/promise-async",
+      {
+        "luukvbaal/statuscol.nvim",
+        config = function()
+          local builtin = require("statuscol.builtin")
+          require("statuscol").setup({
+            relculright = true,
+            segments = {
+              { text = { builtin.foldfunc },      click = "v:lua.ScFa" },
+              { text = { "%s" },                  click = "v:lua.ScSa" },
+              { text = { builtin.lnumfunc, " " }, click = "v:lua.ScLa" },
+            },
+          })
+        end,
+      },
+    },
+    event = "BufReadPost",
+    config = function()
+      require("plugin-config.nvim-ufo")
+    end,
+  },
+  {
+    "anuvyklack/fold-preview.nvim",
+    event = "VeryLazy",
+    dependencies = "anuvyklack/keymap-amend.nvim",
+    config = true,
+  },
+  {
     "tpope/vim-fugitive",
     event = "VeryLazy",
   },
@@ -211,7 +241,7 @@ require("lazy").setup({
   {
     "projekt0n/github-nvim-theme",
     enabled = true,
-    priority = 1000,     -- make sure to load this before all the other start plugins
+    priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       require("github-theme").setup({})
       vim.cmd("colorscheme github_dark_dimmed")
